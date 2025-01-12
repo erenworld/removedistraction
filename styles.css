@@ -102,11 +102,11 @@ table {
     text-decoration: none;
   }
   .link:nth-child(2) {
-    color: #0f317c;
+    color: #2551b0;
     font-family: "Jersey 15", serif;
     background-color: rgb(195, 219, 244);
     padding: 10px 15px;
-    border: 2px solid #0f317c;
+    border: 2px solid #2551b0;
     text-decoration: none;
   }
   .link:nth-child(3) {

@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Zero Distractions",
+    "description": "Masquer les fils d'actualités sur les sites populaires.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.youtube.com/*",
+          "https://www.instagram.com/*",
+          "https://twitter.com/*",
+          "https://www.facebook.com/*",
+          "https://www.linkedin.com/*",
+          "https://www.reddit.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon.png"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
