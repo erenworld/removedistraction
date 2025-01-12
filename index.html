@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No distractions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+            <h1 class="title">Zero distractions</h1>
+            <div class="minicontainer">
+                <div class="flex links">
+                    <a class="link" href="">Sites</a>
+                    <a class="link" href="">Quotes</a>
+                    <a class="link" href="">About</a>
+                </div>
+                <div class="websitecontainer">
+                    <h1>Sites</h1>
+                    <p>Choose sites below to enable Zero Distractions. When you enable a site, we'll request your permission to modify that site.</p>
+                    <div class="toggles">
+                        <div class="accordions">
+                            <button class="accordion">Youtube</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="accordion">Facebook</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="accordion">Instagram</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>        
+
+                                  
+                            <button class="accordion">Twitter</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <button class="accordion">Linkedin</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                            <button class="accordion">Reddit</button>
+                            <div class="panel">
+                                <div class="flex timer">
+                                    <p>Show feed for</p>
+                                    <div class="flex time">
+                                        <a href="">5 min</a>
+                                        <a href="">10 min</a>
+                                        <a href="">30 min</a>
+                                        <a href="">1 hr</a>
+                                        <a href="">1 day</a>
+                                        <a href="">forever</a>
+                                    </div>
+                                </div>
+                            </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+        </script>
+</body>
+</html>
