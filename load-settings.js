@@ -3,5 +3,5 @@
 importScripts("shared.js");
 
 chrome.runtime.onInstalled.addListener(async () => {
-    await loadSettingsFromStorage();
-})
+  await loadSettingsFromStorage();
+});

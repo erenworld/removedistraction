@@ -1,34 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Zero Distractions",
-    "description": "Masquer les fils d'actualités sur les sites populaires.",
-    "version": "1.0",
-    "permissions": [
-      "activeTab",
-      "storage"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": [
-          "https://www.youtube.com/*",
-          "https://www.instagram.com/*",
-          "https://twitter.com/*",
-          "https://www.facebook.com/*",
-          "https://www.linkedin.com/*",
-          "https://www.reddit.com/*"
-        ],
-        "js": ["content.js"]
-      }
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icons/icon.png"
-    },
-    "host_permissions": [
-      "http://*/*",
-      "https://*/*"
-    ]
+  "name": "Zéro distraction",
+  "description": "Cachez les reels et les shorts, parce que c'est ce que vous voulez faire de votre temps limité ? Dites non à la destruction du cerveau.",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "load-settings.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["shared.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
+}
